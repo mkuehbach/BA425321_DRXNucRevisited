@@ -7,7 +7,7 @@ Requirements:<br>
 -MessagePassingInterface, either openmpi or mpich<br>
 -cmake and make<br>
 
-Check for all in Linux console via:<br>
+Check for existence and functionality of all through Linux shell/console via:<br>
  cmake --version<br>
  make --version<br>
  gcc --version<br>
