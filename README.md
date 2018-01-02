@@ -3,8 +3,8 @@ This repository provides supplementary pieces of information to the paper draft 
 "Quantitative Implications of Dislocation Density Gradients for SIBM-Based Discontinuous Dynamic Recrystallization Nucleation Models"
 
 Requirements:
--Working Cxx11 compatible C/C++ compiler toolchain (Ubuntu 16.04 and above)
--MessagePassingInterface, either openmpi or mpich
+-Working Cxx11 compatible C/C++ compiler toolchain (Ubuntu 16.04 and above)<br>
+-MessagePassingInterface, either openmpi or mpich<br>
 -cmake and make
 
 Check for all in Linux console via:
