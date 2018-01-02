@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Parameters>
+	<!--WHAT TO DO-->
+	<AnalysisMode>0</AnalysisMode>
+	<!--0 debug	-->
+
+	<!--FIXED MATERIAL PARAMETER-->
+	<ShearModulus>75.0e9</ShearModulus>
+	<!--Pascal-->
+	<BurgersVector>3.6e-10</BurgersVector>
+	<GBSurfaceTension>0.8</GBSurfaceTension>
+	<!--J/m^2-->	
+	<!--m-->
+	<MobGBm0>4.1e5</MobGBm0>
+	<MobGBH0>4.35</MobGBH0>
+	<!--m0 not temp-dep in m^4/Js, enthalphy in eV-->
+	<MobDisloM0>3.4e6</MobDisloM0>
+	<MobDisloH0>4.11</MobDisloH0>
+	<!--m0 not temp-dep in m^3/Js, enthalphy in eV-->
+	<!--Fe3Si furtkamp gb 75.0,2.85 dislo unknown assume of 189austenitic 3.4e6, 4.11-->
+	<!--189Austenitic roberts ahlblom gb 4.1e5, 4.35 dislo 3.4e6, 4.11-->
+	<!--pure Al, bicrystal missing so far--> 
+	
+
+	<!--PARAMETER INTERVALS TO SCAN-->
+	<MobGBMin>0.00</MobGBMin>
+	<MobGBIncr>0.10</MobGBIncr>
+	<MobGBMax>0.00</MobGBMax>
+	<!--multiples of activation enthalpy-->
+	<MobDisloMin>0.00</MobDisloMin>
+	<MobDisloIncr>0.10</MobDisloIncr>
+	<MobDisloMax>0.00</MobDisloMax>
+	<!--multiples of activation enthalphy-->
+	
+	<MacroStrainRateMin>-3.0</MacroStrainRateMin>
+	<MacroStrainRateIncr>1.0</MacroStrainRateIncr>
+	<MacroStrainRateMax>2.0</MacroStrainRateMax>
+	<!--1/s-->
+	
+	<MicroStrainRateAMin>1.0</MicroStrainRateAMin>
+	<MicroStrainRateBMin>1.0</MicroStrainRateBMin>
+	
+	
+	<TemperatureMin>800.0</TemperatureMin>
+	<TemperatureIncr>50.0</TemperatureIncr>
+	<TemperatureMax>1200.0</TemperatureMax>
+	<!--Celsius-->
+	
+		
+	<!--WHAT TO ANALYZE-->
+
+	<!--ANALYSIS 1 PARAMETER-->
+	<RhoIntegratorAccuracy>0.001</RhoIntegratorAccuracy>
+	<!--controlling maximum change in dislocation density-->
+	<OutputIncrementsTotal>1400</OutputIncrementsTotal>
+	<!--how many steps to partition migration path for incremental boundary position-->
+</Parameters>
