@@ -1,5 +1,5 @@
 # BA425321_DRXNucRevisited
-This repository provides supplementary pieces of information to the paper draft by Markus K\"uhbach, Muhammad Imran, Franz Roters, and Markus Bambach on
+This repository provides supplementary pieces of information to the paper draft by Markus Kuehbach, Muhammad Imran, Franz Roters, and Markus Bambach on
 "Quantitative Implications of Dislocation Density Gradients for SIBM-Based Discontinuous Dynamic Recrystallization Nucleation Models"
 
 Requirements:<br>
