@@ -817,7 +817,7 @@ void solver::run3(const struct runparm3 * parms, const bool getfields )
 	} 
 
 	//log first position
-	results3.push_back(physlog3(f3.t, f3.x, v, p, rhoB, rhoA, (rhoB-rhoA)) );
+	results3.push_back(physlog3(f3.t, f3.x, v, p, rhoA, rhoB, (rhoB-rhoA)) );
 	
 	//forward integration 1d grain boundary migration with simultaneous recovery and straining ##MK::simplified header conditions assuming f.xma
 	while (gbx_now < gbx_max && wo3.i < wo3.imax) { 
@@ -840,7 +840,7 @@ void solver::run3(const struct runparm3 * parms, const bool getfields )
 			real dEdisl = MINUS_FOUR_PI * SQR(f3.x) * dx * p; //..to first order ... + 3.0*(f.x-dx)*SQR(dx)*/
 
 			//##MK::dr_max_acc currently overwritten with 0.0
-			results3.push_back( physlog3(f3.t, f3.x, v, p, rhoB, rhoA, (rhoB - rhoA)) ); /*rcBAI, rcBAT, Fcap, (Fcap < p), dEsurf, dEdisl, (dEsurf + dEdisl)));*/
+			results3.push_back( physlog3(f3.t, f3.x, v, p, rhoA, rhoB, (rhoB - rhoA)) ); /*rcBAI, rcBAT, Fcap, (Fcap < p), dEsurf, dEdisl, (dEsurf + dEdisl)));*/
 			//cout << "Time/GBPosition/rhoB/rhoA\t\t" << f3.t << "\t\t" << f3.x << "\t\t" << rhoB << "\t\t" << rhoA << endl;
 
 			if ( getfields == true )

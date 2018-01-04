@@ -127,7 +127,7 @@ int main(int argc, char** argv)
 	//					double epsb = epsa;
 
 						double lgrho[5] = {1.0e12, 1.0e13, 1.0e14, 1.0e15, 1.0e16};
-						for ( unsigned int small = 0; small < 1; ++small) { //was < 5
+						for ( unsigned int small = 0; small < 5; ++small) { //was < 5
 							for ( unsigned int large = 0; large < 5; ++large) {
 								if (small < large) {
 									//hdl->configuration3.push_back(runparm3(
@@ -174,7 +174,7 @@ int main(int argc, char** argv)
 			//sr->run2(&theparameter, integrator );
 
 			runparm3 theparameter = hdl->configuration3.at(c);
-			sr->run3( &theparameter, true ); //everything which is not 0 is true
+			sr->run3( &theparameter, false ); //true if rhofields output desired
 
 			//particular instance of a solver pointed to by sr holds results...
 
